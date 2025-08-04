@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godrej Skyshore Versova | Clone</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .container {
+            max-width: 1280px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header/Navigation Section -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <!-- Logo/Brand Name -->
+            <a href="#" class="text-2xl font-bold text-gray-900">
+                <span class="text-blue-600">Skyshore</span> Homes
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-6 text-gray-600 font-medium">
+                <a href="#overview" class="hover:text-blue-600 transition-colors">Overview</a>
+                <a href="#configuration" class="hover:text-blue-600 transition-colors">Configuration</a>
+                <a href="#amenities" class="hover:text-blue-600 transition-colors">Amenities</a>
+                <a href="#location" class="hover:text-blue-600 transition-colors">Location</a>
+                <a href="#gallery" class="hover:text-blue-600 transition-colors">Gallery</a>
+                <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
+                <div class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 98199 92707</span>
+                </div>
+            </nav>
+
+            <!-- Mobile Navigation Toggle -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-lg pb-4">
+            <a href="#overview" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Overview</a>
+            <a href="#configuration" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Configuration</a>
+            <a href="#amenities" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Amenities</a>
+            <a href="#location" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Location</a>
+            <a href="#gallery" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Gallery</a>
+            <a href="#contact" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Contact</a>
+            <a href="tel:+919819992707" class="block py-2 px-4 text-blue-600 hover:bg-gray-100 font-bold"><i class="fa-solid fa-phone mr-2"></i>+91 98765 43210</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-cover bg-center h-screen flex items-center justify-center text-white p-4" style="background-image: url('https://placehold.co/1920x1080/011f4a/ffffff?text=Luxury+Apartments+with+Sea+View');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">G - Skyshore Versova</h1>
+                <p class="text-lg md:text-2xl font-light mb-8">Luxury 3 & 4 BHK Sea View Residences</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                        Book an Appointment
+                    </a>
+                    <a href="https://wa.me/919819992707" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                        <i class="fa-brands fa-whatsapp mr-2"></i>Connect on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center space-y-12 lg:space-y-0 lg:space-x-12">
+                    <div class="lg:w-1/2">
+                        <img src="https://placehold.co/800x600/f0f4f8/011f4a?text=Project+Overview" alt="Project Overview" class="w-full h-auto object-cover rounded-2xl shadow-xl">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Project Overview</h2>
+                        <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                            Discover an unparalleled lifestyle at G - Skyshore Versova, where luxury meets the tranquility of the sea. Our meticulously designed 3 & 4 BHK residences offer breathtaking panoramic views of the Arabian Sea, coupled with world-class amenities and sophisticated living spaces.
+                        </p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center text-lg"><i class="fa-solid fa-location-dot text-blue-600 mr-3"></i>Prime Location at Versova</li>
+                            <li class="flex items-center text-lg"><i class="fa-solid fa-building text-blue-600 mr-3"></i>2 Iconic Towers, 3 Flats Per Floor</li>
+                            <li class="flex items-center text-lg"><i class="fa-solid fa-ruler-combined text-blue-600 mr-3"></i>Spacious Units with High-End Finishes</li>
+                            <li class="flex items-center text-lg"><i class="fa-solid fa-hand-holding-heart text-blue-600 mr-3"></i>Over 25+ World-Class Amenities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Configuration & Pricing Section -->
+        <section id="configuration" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Project Configuration</h2>
+                <div class="overflow-x-auto shadow-xl rounded-2xl">
+                    <table class="min-w-full bg-white rounded-2xl">
+                        <thead>
+                            <tr class="text-gray-600 text-left font-semibold border-b border-gray-200">
+                                <th class="py-4 px-6">Property Type</th>
+                                <th class="py-4 px-6">Carpet Area (Sq.Ft.)</th>
+                                <th class="py-4 px-6">Starting Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6">3 BHK Sea View</td>
+                                <td class="py-4 px-6">1500 - 1800</td>
+                                <td class="py-4 px-6 font-semibold text-blue-600">₹8.25 Cr*</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6">4 BHK Sea View</td>
+                                <td class="py-4 px-6">2000 - 2500</td>
+                                <td class="py-4 px-6 font-semibold text-blue-600">₹11.50 Cr*</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-8 text-center text-gray-500 text-sm italic">
+                    *Prices are subject to change. This is for informational purposes only.
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">World-Class Amenities</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Amenity 1 -->
+                    <div class="bg-gray-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <i class="fa-solid fa-water-ladder text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800">Swimming Pool</h3>
+                    </div>
+                    <!-- Amenity 2 -->
+                    <div class="bg-gray-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <i class="fa-solid fa-dumbbell text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800">Gymnasium</h3>
+                    </div>
+                    <!-- Amenity 3 -->
+                    <div class="bg-gray-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <i class="fa-solid fa-basketball text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800">Basketball Court</h3>
+                    </div>
+                    <!-- Amenity 4 -->
+                    <div class="bg-gray-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <i class="fa-solid fa-person-skating text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800">Skating Rink</h3>
+                    </div>
+                    <!-- Amenity 5 -->
+                    <div class="bg-gray-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <i class="fa-solid fa-children text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800">Children’s Play Area</h3>
+                    </div>
+                    <!-- Amenity 6 -->
+                    <div class="bg-gray-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <i class="fa-solid fa-couch text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800">Clubhouse</h3>
+                    </div>
+                    <!-- Amenity 7 -->
+                    <div class="bg-gray-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <i class="fa-solid fa-person-running text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800">Jogging Track</h3>
+                    </div>
+                    <!-- Amenity 8 -->
+                    <div class="bg-gray-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <i class="fa-solid fa-tree text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800">Landscaped Garden</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Location & Connectivity</h2>
+                <div class="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-12">
+                    <div class="lg:w-1/2">
+                        <div class="bg-white p-8 rounded-2xl shadow-xl h-full">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Prime Location at Versova</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                G - Skyshore Versova is strategically located to offer the best of urban living and serene coastal charm. Enjoy excellent connectivity to key landmarks and transport hubs.
+                            </p>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start"><i class="fa-solid fa-train-subway text-blue-600 text-xl mr-3 mt-1"></i><span class="flex-1">Versova Metro Station (Approx. 5 Mins Drive)</span></li>
+                                <li class="flex items-start"><i class="fa-solid fa-road text-blue-600 text-xl mr-3 mt-1"></i><span class="flex-1">Easy access to Link Road & Western Express Highway</span></li>
+                                <li class="flex items-start"><i class="fa-solid fa-bridge text-blue-600 text-xl mr-3 mt-1"></i><span class="flex-1">Proximity to Upcoming Bandra-Versova Sea Link</span></li>
+                                <li class="flex items-start"><i class="fa-solid fa-hospital text-blue-600 text-xl mr-3 mt-1"></i><span class="flex-1">Close to Kokilaben Ambani Hospital</span></li>
+                                <li class="flex items-start"><i class="fa-solid fa-shop text-blue-600 text-xl mr-3 mt-1"></i><span class="flex-1">Near Infiniti Mall & Andheri West's hubs</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <!-- Placeholder for a map -->
+                        <div class="bg-gray-200 h-80 rounded-2xl flex items-center justify-center text-gray-500 shadow-xl">
+                            <i class="fa-solid fa-map-location-dot text-4xl mb-2"></i>
+                            <span class="ml-4 text-xl">Map Placeholder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Project Gallery</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <img src="https://placehold.co/600x400/011f4a/ffffff?text=Gallery+Image+1" alt="Gallery Image 1" class="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/011f4a/ffffff?text=Gallery+Image+2" alt="Gallery Image 2" class="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/011f4a/ffffff?text=Gallery+Image+3" alt="Gallery Image 3" class="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/011f4a/ffffff?text=Gallery+Image+4" alt="Gallery Image 4" class="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/011f4a/ffffff?text=Gallery+Image+5" alt="Gallery Image 5" class="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/011f4a/ffffff?text=Gallery+Image+6" alt="Gallery Image 6" class="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Enquire Now</h2>
+                <div class="max-w-xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <div class="flex">
+                                <select name="country-code" id="country-code" class="border border-gray-300 rounded-l-lg px-4 py-3 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                                    <option value="+91">+91</option>
+                                    <option value="+1">+1</option>
+                                    <option value="+44">+44</option>
+                                </select>
+                                <input type="tel" id="phone" name="phone" required class="flex-1 px-4 py-3 border border-gray-300 rounded-r-lg focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <a href="#" class="text-blue-600 font-bold text-2xl">Skyshore Homes</a>
+            </div>
+            <div class="flex justify-center space-x-6 mb-6 text-gray-400">
+                <a href="#" class="hover:text-white transition-colors">Disclaimer</a>
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms & Conditions</a>
+            </div>
+            <div class="flex justify-center space-x-4 text-xl mb-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p class="text-sm">
+                &copy; 2023 Godrej Skyshore Versova. All rights reserved. <br>
+                This is a representation website and not the official website of the developer.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking a link
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle functionality
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
